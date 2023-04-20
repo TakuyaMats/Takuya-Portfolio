@@ -10,11 +10,12 @@ html, body {
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
+    background-color: #E0DFE0;
 }
 
 .body-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 98vh;
 }
 
 header {
@@ -52,6 +53,7 @@ nav {
 
 .header-nav-list li:nth-of-type(2) {
     margin-left: auto;
+    margin-right: 3em;
 }
 
 .header-nav-list li:nth-of-type(3) {
