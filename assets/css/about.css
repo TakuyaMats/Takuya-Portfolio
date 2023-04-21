@@ -60,6 +60,80 @@ nav {
     margin-right: 3em;
 }
 
+/* Content */
+.section-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin: 3em;
+}
+
+/* Introduction */
+.introduction-title {
+    overflow: hidden;
+}
+
+.introduction-title::after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+}
+
+.introduction-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.introduction-content img {
+    width: 85px;
+    height: 85px;
+    margin-right: 2em;
+}
+
+.education-experience {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.education-title::after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 100%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+}
+
+.education {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.education_1 p,
+.education_2 p {
+    margin: 0.2em 0;
+}
+
+.desc {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.experience {
+    margin-right: 9em;
+}
+
 footer {
     display: flex;
     justify-content: center;
