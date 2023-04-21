@@ -97,7 +97,7 @@ nav {
     left: 0;
     width: 101%;
     height: 101%;
-    background: #22222A;
+    /* background: #555555; */
     opacity: 0;
     z-index: 1;
 }
@@ -122,32 +122,51 @@ nav {
 
 .item-description {
     position: absolute;
-    top: 182px;
+    /* text-align: center; */
+    top: 100px;
     right: 0;
     width: 50%;
-    padding-right: 4%;
-    line-height: 1.8;
+    padding-right: 5%;
+    line-height: 2;
 }
 
 /* Staggered Vertical Items ------------------------------------------------------*/
 .item-header {
     position: absolute;
-    top: 150px;
+    top: 75px;
     left: -1.8%;
     z-index: 100;
 }
 
 .item-header .vertical-part {
     margin: 0 -4px;
-    font-family: 'Montserrat', sans-serif;
-    -webkit-font-smoothing: auto;
-    font-size: 7vw;
-    color: #fff;
+    /* font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: auto; */
+    font-size: 10px;
+    color: #555555;
 }
 
 .vertical-part {
     overflow: hidden;
     display: inline-block;
+}
+
+.repository a,
+.live a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 1em;
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.title b {
+    font-size: 65px;
 }
 
 .vertical-part b {
