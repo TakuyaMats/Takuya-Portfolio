@@ -3,6 +3,9 @@
 }
 
 html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     padding: 0;
 }
@@ -65,6 +68,7 @@ nav {
     display: flex;
     justify-content: start;
     flex-direction: column;
+    flex-grow: 1;
     margin: 3em;
 }
 
@@ -73,15 +77,9 @@ nav {
     overflow: hidden;
 }
 
-.introduction-title::after {
-    content: "";
-    display: inline-block;
-    height: 0.6em;
-    vertical-align: bottom;
-    width: 100%;
-    margin-right: -100%;
-    margin-left: 10px;
-    border-top: 1px solid black;
+.education,
+.experience {
+    width: 90%;
 }
 
 .introduction-content {
@@ -96,13 +94,16 @@ nav {
     margin-right: 2em;
 }
 
-.education-experience {
+.education-experience,
+.technical-personal-skills {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* gap: 2em; */
 }
 
-.education-title::after {
+.introduction-title::after {
     content: "";
     display: inline-block;
     height: 0.6em;
@@ -113,7 +114,34 @@ nav {
     border-top: 1px solid black;
 }
 
-.education {
+.education-title::after, 
+.experience-title::after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 50%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+}
+
+.technical-skills-title::after,
+.personal-skills-title::after {
+    content: "";
+    display: inline-block;
+    height: 0.6em;
+    vertical-align: bottom;
+    width: 50%;
+    margin-right: -100%;
+    margin-left: 10px;
+    border-top: 1px solid black;
+}
+
+.education, 
+.experience,
+.technical-skills,
+.personal-skills {
     display: flex;
     justify-content: start;
     flex-direction: column;
@@ -121,8 +149,22 @@ nav {
 }
 
 .education_1 p,
-.education_2 p {
+.education_2 p,
+.experience_1 p,
+.experience_2 p,
+.experience_3 p,
+.experience_4 p {
     margin: 0.2em 0;
+}
+
+.experience_1,
+.experience_2,
+.experience_3,
+.experience_4 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 4em;
 }
 
 .desc {
@@ -130,18 +172,42 @@ nav {
     opacity: 0.6;
 }
 
-.experience {
-    margin-right: 9em;
+.experience_1_date,
+.experience_2_date,
+.experience_3_date,
+.experience_4_date {
+    font-size: 12px;
+    font-weight: bold;
 }
 
-footer {
+
+.experience {
+    /* margin-right: 1em; */
+    gap: 10px;
+}
+
+/* technical-skills */
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2em;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    flex-wrap: wrap;
+}
+
+.list li {
+    width: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+/* .personal-skills {
+    margin-right: 5em;
+} */
+
+footer {
+    padding: 2em;
+    text-align: center;
 }
 
 .footer-nav-list {

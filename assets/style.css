@@ -3,6 +3,7 @@
 }
 
 html, body {
+    height: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -14,8 +15,9 @@ body {
 }
 
 .body-container {
-    position: relative;
-    min-height: 98vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 header {
@@ -65,6 +67,7 @@ nav {
     justify-content: center;
     flex-direction: row;
     margin: 3em;
+    flex-grow: 1;
 }
 
 .content-info {
@@ -94,13 +97,9 @@ nav {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2em;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding: 2em;
+    text-align: center;
+    margin-top: auto;
 }
 
 .footer-nav-list {

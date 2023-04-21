@@ -198,14 +198,12 @@ nav {
     background: #6a6a77;
 }
 
-
-
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2em;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
