@@ -164,7 +164,7 @@ nav {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 4em;
+    gap: 1em;
 }
 
 .desc {

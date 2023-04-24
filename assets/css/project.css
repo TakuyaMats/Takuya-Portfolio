@@ -3,6 +3,7 @@
 }
 
 html, body {
+    height: 100%;
     margin: 0 auto;
     padding: 0;
 }
@@ -14,7 +15,9 @@ body {
 }
 
 .body-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
     min-height: 98vh;
 }
 
@@ -63,6 +66,7 @@ nav {
 .content-width {
     width: 86%;
     margin: 0 auto;
+    margin-bottom: 250px;
 }
 
 .slideshow {
@@ -80,13 +84,13 @@ nav {
 }
 
 .item {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: auto;
 }
 
 .item-image-container {
-    position: relative;
+    position: absolute;
     width: 42%;
 }
 
@@ -106,6 +110,8 @@ nav {
     position: relative;
     width: 100%;
     height: auto;
+    max-width: 446px;
+    max-height: 669px;
     opacity: 0;
     display: block;
     /* transition: property name | duration | timing-function | delay  */
@@ -122,12 +128,29 @@ nav {
 
 .item-description {
     position: absolute;
-    /* text-align: center; */
-    top: 100px;
+    top: 40px;
     right: 0;
     width: 50%;
     padding-right: 5%;
+    line-height: 2.5;
+    max-width: 530px;
+}
+
+.space-description {
+    top: 5px;
     line-height: 2;
+}
+
+.paragraph b,
+.tech-stack {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.space-paragraph b {
+    font-size: 14px;
+    font-weight: 300;
+    color: black;
 }
 
 /* Staggered Vertical Items ------------------------------------------------------*/
@@ -136,6 +159,10 @@ nav {
     top: 75px;
     left: -1.8%;
     z-index: 100;
+}
+
+.space-header {
+    top: 230px;
 }
 
 .item-header .vertical-part {
@@ -149,6 +176,17 @@ nav {
 .vertical-part {
     overflow: hidden;
     display: inline-block;
+}
+
+.vertical-part a {
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+}
+
+.link-container {
+    display: flex;
+    justify-content: start;
+    gap: 2em;
 }
 
 .repository a,
@@ -165,6 +203,10 @@ nav {
     flex-direction: column;
 }
 
+.space b {
+    color: #5072A7;
+}
+
 .title b {
     font-size: 65px;
 }
@@ -174,8 +216,17 @@ nav {
     transform: translateY(100%);
 }
 
+/* .vertical-part p {
+    font-size: 14px;
+    margin-bottom: 20px
+} */
+
 .item-header .vertical-part b {
     transition: .5s;
+}
+
+.item-description .technology {
+    white-space: pre-line;
 }
 
 .item-description .vertical-part b {
@@ -193,7 +244,7 @@ nav {
 /* Controls ----------------------------------------------------------------------*/
 .controls {
     position: absolute;
-    top: 50%;
+    top: 10%;
     right: 20px;
     transform: translateY(-50%);
 }
@@ -218,13 +269,16 @@ nav {
 }
 
 footer {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 2em;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
+    padding: 2em;
+    text-align: center;
+    margin-top: auto;
 }
 
 .footer-nav-list {
