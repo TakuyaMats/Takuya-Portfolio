@@ -235,3 +235,26 @@ footer {
     text-decoration-thickness: 1px;
     margin: 1em;
 }
+
+
+@media (max-width: 850px) {
+    .header-nav-list a {
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .social a {
+        color: black;
+        font-size: 12px;
+        font-weight: 400;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 1px;
+        margin: 1em;
+    }
+}
