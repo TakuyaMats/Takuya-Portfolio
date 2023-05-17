@@ -357,3 +357,107 @@ footer {
         margin: 1em;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .header-nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .hamburger span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-top: 25px;
+        margin-bottom: 2em;
+    }
+
+    .header-nav-list a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .header-nav-list li:nth-of-type(1) {
+        margin-left: 0;
+    }
+
+    .header-nav-list li:nth-of-type(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .header-nav-list li:nth-of-type(3) {
+        margin-right: 0;
+    }
+    
+    .header-nav-list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        background-color: white;
+        z-index: 1;
+        padding: 35px;
+        width: 165px;
+    }
+
+    .hamburger.onclick + .header-nav-list {
+        display: flex !important;
+    }
+
+    footer {
+        padding: 0;
+        text-align: center;
+        margin-top: auto;
+        margin: 1em;
+    }
+    
+    .footer-nav-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        gap: 1em;
+    }
+    
+    .footer-nav-list li:nth-of-type(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .title {
+        font-size: 10px;
+        margin-left: 0;
+    }
+    
+    .social a {
+        color: black;
+        font-size: 16px;
+        font-weight: 400;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 1px;
+        margin: 1em;
+    }
+}
