@@ -114,7 +114,7 @@ nav {
 
 .item-description {
     position: absolute;
-    top: 250px;
+    top: 200px;
     right: 0;
     width: 50%;
     padding-right: 4%;
@@ -628,7 +628,7 @@ footer {
     }
 
     .title b {
-        font-size: 35px;
+        font-size: 25px;
     }
     
     /* Controls ----------------------------------------------------------------------*/
